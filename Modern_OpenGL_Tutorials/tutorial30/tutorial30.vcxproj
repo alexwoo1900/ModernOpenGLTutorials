@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{82312D20-109B-4ADE-B2E8-C6502F47F14A}</ProjectGuid>
+    <RootNamespace>tutorial30</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\include\assimp\color4.inl" />
+    <None Include="..\include\assimp\material.inl" />
+    <None Include="..\include\assimp\matrix3x3.inl" />
+    <None Include="..\include\assimp\matrix4x4.inl" />
+    <None Include="..\include\assimp\quaternion.inl" />
+    <None Include="..\include\assimp\vector2.inl" />
+    <None Include="..\include\assimp\vector3.inl" />
+    <None Include="src\lighting.cs" />
+    <None Include="src\lighting.es" />
+    <None Include="src\lighting.fs" />
+    <None Include="src\lighting.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\include\camera.cpp" />
+    <ClCompile Include="..\include\cubemap_texture.cpp" />
+    <ClCompile Include="..\include\glut_backend.cpp" />
+    <ClCompile Include="..\include\math_3d.cpp" />
+    <ClCompile Include="..\include\ogldev_app.cpp" />
+    <ClCompile Include="..\include\ogldev_atb.cpp" />
+    <ClCompile Include="..\include\ogldev_basic_lighting.cpp" />
+    <ClCompile Include="..\include\ogldev_shadow_map_fbo.cpp" />
+    <ClCompile Include="..\include\ogldev_texture.cpp" />
+    <ClCompile Include="..\include\ogldev_util.cpp" />
+    <ClCompile Include="..\include\pipeline.cpp" />
+    <ClCompile Include="..\include\technique.cpp" />
+    <ClCompile Include="src\lighting_technique.cpp" />
+    <ClCompile Include="src\mesh.cpp" />
+    <ClCompile Include="src\tutorial30.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\assimp\ai_assert.h" />
+    <ClInclude Include="..\include\assimp\anim.h" />
+    <ClInclude Include="..\include\assimp\camera.h" />
+    <ClInclude Include="..\include\assimp\cexport.h" />
+    <ClInclude Include="..\include\assimp\cfileio.h" />
+    <ClInclude Include="..\include\assimp\cimport.h" />
+    <ClInclude Include="..\include\assimp\color4.h" />
+    <ClInclude Include="..\include\assimp\Compiler\poppack1.h" />
+    <ClInclude Include="..\include\assimp\Compiler\pushpack1.h" />
+    <ClInclude Include="..\include\assimp\config.h" />
+    <ClInclude Include="..\include\assimp\DefaultLogger.hpp" />
+    <ClInclude Include="..\include\assimp\defs.h" />
+    <ClInclude Include="..\include\assimp\Exporter.hpp" />
+    <ClInclude Include="..\include\assimp\Importer.hpp" />
+    <ClInclude Include="..\include\assimp\importerdesc.h" />
+    <ClInclude Include="..\include\assimp\IOStream.hpp" />
+    <ClInclude Include="..\include\assimp\IOSystem.hpp" />
+    <ClInclude Include="..\include\assimp\light.h" />
+    <ClInclude Include="..\include\assimp\Logger.hpp" />
+    <ClInclude Include="..\include\assimp\LogStream.hpp" />
+    <ClInclude Include="..\include\assimp\material.h" />
+    <ClInclude Include="..\include\assimp\matrix3x3.h" />
+    <ClInclude Include="..\include\assimp\matrix4x4.h" />
+    <ClInclude Include="..\include\assimp\mesh.h" />
+    <ClInclude Include="..\include\assimp\NullLogger.hpp" />
+    <ClInclude Include="..\include\assimp\postprocess.h" />
+    <ClInclude Include="..\include\assimp\ProgressHandler.hpp" />
+    <ClInclude Include="..\include\assimp\quaternion.h" />
+    <ClInclude Include="..\include\assimp\scene.h" />
+    <ClInclude Include="..\include\assimp\texture.h" />
+    <ClInclude Include="..\include\assimp\types.h" />
+    <ClInclude Include="..\include\assimp\vector2.h" />
+    <ClInclude Include="..\include\assimp\vector3.h" />
+    <ClInclude Include="..\include\assimp\version.h" />
+    <ClInclude Include="..\include\ATB\AntTweakBar.h" />
+    <ClInclude Include="..\include\GL\eglew.h" />
+    <ClInclude Include="..\include\GL\freeglut.h" />
+    <ClInclude Include="..\include\GL\freeglut_ext.h" />
+    <ClInclude Include="..\include\GL\freeglut_std.h" />
+    <ClInclude Include="..\include\GL\freeglut_ucall.h" />
+    <ClInclude Include="..\include\GL\glew.h" />
+    <ClInclude Include="..\include\GL\glut.h" />
+    <ClInclude Include="..\include\GL\glxew.h" />
+    <ClInclude Include="..\include\GL\wglew.h" />
+    <ClInclude Include="..\include\ImageMagick-6\Magick++.h" />
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\Blob.h" />
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\BlobRef.h" />
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\CoderInfo.h" />
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\Color.h" />
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\Drawable.h" />
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\Exception.h" />
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\Functions.h" />
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\Geometry.h" />
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\Image.h" />
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\ImageRef.h" />
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\Include.h" />
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\Montage.h" />
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\Options.h" />
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\Pixels.h" />
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\STL.h" />
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\Thread.h" />
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\TypeMetric.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\accelerate.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\animate-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\animate.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\annotate.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\api.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\artifact.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\attribute.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\blob-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\blob.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\cache-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\cache-view.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\cache.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\channel.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\cipher.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\client.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\coder.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\color-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\color.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\colormap-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\colormap.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\colorspace-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\colorspace.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\compare.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\composite-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\composite.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\compress.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\configure.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\constitute.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\decorate.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\delegate-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\delegate.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\deprecate.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\display-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\display.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\distort.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\draw-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\draw.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\effect.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\enhance.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\exception-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\exception.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\feature.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\fourier.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\fx-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\fx.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\gem.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\geometry.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\hashmap.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\histogram.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\identify.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\image-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\image-view.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\image.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\ImageMagick.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\layer.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\list.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\locale_.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\log.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\mac.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\magic.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\magick-config.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\magick-type.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\magick.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\MagickCore.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\matrix.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\memory-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\memory_.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\method-attribute.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\methods.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\mime-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\mime.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\module.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\monitor-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\monitor.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\montage.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\morphology-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\morphology.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\nt-base.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\nt-feature.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\option.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\paint.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\pixel-accessor.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\pixel-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\pixel.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\policy.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\prepress.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\PreRvIcccm.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\profile.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\property.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\quantize.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\quantum-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\quantum.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\random-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\random_.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\registry.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\resample-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\resample.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\resize-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\resize.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\resource_.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\segment.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\semaphore-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\semaphore.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\shear.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\signature-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\signature.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\splay-tree.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\static.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\statistic.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\stream-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\stream.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\string-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\string_.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\studio.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\thread-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\thread_.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\threshold.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\timer.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\token-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\token.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\transform.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\type.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\utility-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\utility.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\version.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\vms.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\widget.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\xml-tree.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\xwindow-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\magick\xwindow.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\animate.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\compare.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\composite.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\conjure.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\convert.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\deprecate.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\display.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\drawing-wand.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\identify.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\import.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\magick-image.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\magick-property.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\magick-wand-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\magick-wand.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\MagickWand.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\magick_wand.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\method-attribute.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\mogrify-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\mogrify.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\montage.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\pixel-iterator.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\pixel-wand-private.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\pixel-wand.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\stream.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\studio.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\wand-config.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\wand-view.h" />
+    <ClInclude Include="..\include\ImageMagick-6\wand\wand.h" />
+    <ClInclude Include="..\include\ogldev_app.h" />
+    <ClInclude Include="..\include\ogldev_atb.h" />
+    <ClInclude Include="..\include\ogldev_basic_lighting.h" />
+    <ClInclude Include="..\include\ogldev_callbacks.h" />
+    <ClInclude Include="..\include\ogldev_camera.h" />
+    <ClInclude Include="..\include\ogldev_cubemap_texture.h" />
+    <ClInclude Include="..\include\ogldev_engine_common.h" />
+    <ClInclude Include="..\include\ogldev_glut_backend.h" />
+    <ClInclude Include="..\include\ogldev_keys.h" />
+    <ClInclude Include="..\include\ogldev_lights_common.h" />
+    <ClInclude Include="..\include\ogldev_math_3d.h" />
+    <ClInclude Include="..\include\ogldev_pipeline.h" />
+    <ClInclude Include="..\include\ogldev_shadow_map_fbo.h" />
+    <ClInclude Include="..\include\ogldev_texture.h" />
+    <ClInclude Include="..\include\ogldev_types.h" />
+    <ClInclude Include="..\include\ogldev_util.h" />
+    <ClInclude Include="..\include\technique.h" />
+    <ClInclude Include="src\lighting_technique.h" />
+    <ClInclude Include="src\mesh.h" />
+    <ClInclude Include="src\render_callbacks.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

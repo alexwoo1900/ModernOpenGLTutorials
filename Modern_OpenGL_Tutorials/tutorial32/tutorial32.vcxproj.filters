@@ -1,0 +1,824 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\GL">
+      <UniqueIdentifier>{bd94bf2b-b073-486d-8391-de2043513669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\assimp">
+      <UniqueIdentifier>{cf763325-5478-4e27-86a7-f1700f5f601e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ImageMagick-6">
+      <UniqueIdentifier>{ec0a3f9f-4a20-4919-89f5-497d12ce0d8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ATB">
+      <UniqueIdentifier>{37e5fb05-1b60-4b01-a6e6-f0cb61bf51a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\assimp\Compiler">
+      <UniqueIdentifier>{e1adadb2-ae55-4c07-8f23-3c0c7387f99f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ImageMagick-6\magick">
+      <UniqueIdentifier>{3704d9c7-4a1f-485b-b712-ee42ec5a81bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ImageMagick-6\Magick++">
+      <UniqueIdentifier>{955c08f3-2b99-4610-8a08-9e91df569b1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ImageMagick-6\wand">
+      <UniqueIdentifier>{b737a553-5290-4cb0-b4ec-dc423d14cc06}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\ImageMagick-6\Magick++.h">
+      <Filter>头文件\ImageMagick-6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\animate.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\compare.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\composite.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\conjure.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\convert.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\deprecate.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\display.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\drawing-wand.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\identify.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\import.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\magick_wand.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\magick-image.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\magick-property.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\MagickWand.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\magick-wand.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\magick-wand-private.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\method-attribute.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\mogrify.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\mogrify-private.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\montage.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\pixel-iterator.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\pixel-wand.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\pixel-wand-private.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\stream.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\studio.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\wand.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\wand-config.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\wand\wand-view.h">
+      <Filter>头文件\ImageMagick-6\wand</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\Blob.h">
+      <Filter>头文件\ImageMagick-6\Magick++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\BlobRef.h">
+      <Filter>头文件\ImageMagick-6\Magick++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\CoderInfo.h">
+      <Filter>头文件\ImageMagick-6\Magick++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\Color.h">
+      <Filter>头文件\ImageMagick-6\Magick++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\Drawable.h">
+      <Filter>头文件\ImageMagick-6\Magick++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\Exception.h">
+      <Filter>头文件\ImageMagick-6\Magick++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\Functions.h">
+      <Filter>头文件\ImageMagick-6\Magick++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\Geometry.h">
+      <Filter>头文件\ImageMagick-6\Magick++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\Image.h">
+      <Filter>头文件\ImageMagick-6\Magick++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\ImageRef.h">
+      <Filter>头文件\ImageMagick-6\Magick++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\Include.h">
+      <Filter>头文件\ImageMagick-6\Magick++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\Montage.h">
+      <Filter>头文件\ImageMagick-6\Magick++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\Options.h">
+      <Filter>头文件\ImageMagick-6\Magick++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\Pixels.h">
+      <Filter>头文件\ImageMagick-6\Magick++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\STL.h">
+      <Filter>头文件\ImageMagick-6\Magick++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\Thread.h">
+      <Filter>头文件\ImageMagick-6\Magick++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\Magick++\TypeMetric.h">
+      <Filter>头文件\ImageMagick-6\Magick++</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\accelerate.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\animate.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\animate-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\annotate.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\api.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\artifact.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\attribute.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\blob.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\blob-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\cache.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\cache-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\cache-view.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\channel.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\cipher.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\client.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\coder.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\color.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\colormap.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\colormap-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\color-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\colorspace.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\colorspace-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\compare.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\composite.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\composite-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\compress.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\configure.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\constitute.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\decorate.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\delegate.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\delegate-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\deprecate.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\display.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\display-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\distort.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\draw.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\draw-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\effect.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\enhance.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\exception.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\exception-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\feature.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\fourier.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\fx.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\fx-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\gem.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\geometry.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\hashmap.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\histogram.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\identify.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\image.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\ImageMagick.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\image-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\image-view.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\layer.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\list.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\locale_.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\log.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\mac.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\magic.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\magick.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\magick-config.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\MagickCore.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\magick-type.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\matrix.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\memory_.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\memory-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\method-attribute.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\methods.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\mime.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\mime-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\module.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\monitor.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\monitor-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\montage.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\morphology.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\morphology-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\nt-base.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\nt-feature.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\option.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\paint.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\pixel.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\pixel-accessor.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\pixel-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\policy.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\prepress.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\PreRvIcccm.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\profile.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\property.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\quantize.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\quantum.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\quantum-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\random_.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\random-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\registry.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\resample.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\resample-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\resize.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\resize-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\resource_.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\segment.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\semaphore.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\semaphore-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\shear.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\signature.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\signature-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\splay-tree.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\static.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\statistic.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\stream.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\stream-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\string_.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\string-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\studio.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\thread_.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\thread-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\threshold.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\timer.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\token.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\token-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\transform.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\type.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\utility.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\utility-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\version.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\vms.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\widget.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\xml-tree.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\xwindow.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ImageMagick-6\magick\xwindow-private.h">
+      <Filter>头文件\ImageMagick-6\magick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\Compiler\poppack1.h">
+      <Filter>头文件\assimp\Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\Compiler\pushpack1.h">
+      <Filter>头文件\assimp\Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\ai_assert.h">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\anim.h">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\camera.h">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\cexport.h">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\cfileio.h">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\cimport.h">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\color4.h">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\config.h">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\DefaultLogger.hpp">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\defs.h">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\Exporter.hpp">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\Importer.hpp">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\importerdesc.h">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\IOStream.hpp">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\IOSystem.hpp">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\light.h">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\Logger.hpp">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\LogStream.hpp">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\material.h">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\matrix3x3.h">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\matrix4x4.h">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\mesh.h">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\NullLogger.hpp">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\postprocess.h">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\ProgressHandler.hpp">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\quaternion.h">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\scene.h">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\texture.h">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\types.h">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\vector2.h">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\vector3.h">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\assimp\version.h">
+      <Filter>头文件\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\GL\eglew.h">
+      <Filter>头文件\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\GL\freeglut.h">
+      <Filter>头文件\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\GL\freeglut_ext.h">
+      <Filter>头文件\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\GL\freeglut_std.h">
+      <Filter>头文件\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\GL\freeglut_ucall.h">
+      <Filter>头文件\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\GL\glew.h">
+      <Filter>头文件\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\GL\glut.h">
+      <Filter>头文件\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\GL\glxew.h">
+      <Filter>头文件\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\GL\wglew.h">
+      <Filter>头文件\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ATB\AntTweakBar.h">
+      <Filter>头文件\ATB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ogldev_app.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ogldev_atb.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ogldev_basic_lighting.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ogldev_callbacks.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ogldev_camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ogldev_cubemap_texture.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ogldev_engine_common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ogldev_glut_backend.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ogldev_keys.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ogldev_lights_common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ogldev_math_3d.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ogldev_pipeline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ogldev_shadow_map_fbo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ogldev_texture.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ogldev_types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ogldev_util.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\technique.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ogldev_basic_mesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\include\assimp\color4.inl">
+      <Filter>头文件\assimp</Filter>
+    </None>
+    <None Include="..\include\assimp\material.inl">
+      <Filter>头文件\assimp</Filter>
+    </None>
+    <None Include="..\include\assimp\matrix3x3.inl">
+      <Filter>头文件\assimp</Filter>
+    </None>
+    <None Include="..\include\assimp\matrix4x4.inl">
+      <Filter>头文件\assimp</Filter>
+    </None>
+    <None Include="..\include\assimp\quaternion.inl">
+      <Filter>头文件\assimp</Filter>
+    </None>
+    <None Include="..\include\assimp\vector2.inl">
+      <Filter>头文件\assimp</Filter>
+    </None>
+    <None Include="..\include\assimp\vector3.inl">
+      <Filter>头文件\assimp</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\include\camera.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\cubemap_texture.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\glut_backend.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\math_3d.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\ogldev_app.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\ogldev_atb.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\ogldev_basic_lighting.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\ogldev_shadow_map_fbo.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\ogldev_texture.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\ogldev_util.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\pipeline.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\technique.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tutorial32.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\ogldev_basic_mesh.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
